@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google';
+import { Inter, Barlow } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { Ii18nLocales, IRootLayoutProps } from '@/types/global';
@@ -8,7 +8,11 @@ import { getI18nLocales } from '@/utils/getI18nLocales';
 
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], 
+  variable: '--font-barlow',
+});
 
 export function generateStaticParams(): Ii18nLocales[] {
   return getI18nLocales();
@@ -33,7 +37,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={barlow.className}>
         <AppProvider locale={locale} messages={localesFile}>
           {children}
         </AppProvider>

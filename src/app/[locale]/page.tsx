@@ -1,5 +1,5 @@
-import { ExampleComponent } from '@/components/ExampleComponent';
+import { MatchesCard } from '@/components/MatchesCard';
 
 export default function Home(): JSX.Element {
-  return <ExampleComponent />;
+  return <MatchesCard />;
 }
