@@ -3,15 +3,15 @@
 ### To Get Started in the apps
 
 Here's the details to start the app and some information to start
- - Matches Page
+ # Matches Page
   - Wrap the Matches Card
- - Matches Card
+ # Matches Card
   - Fetch/Store the data in the client wrapper of score cards
   - Handlers the filter
   - Wrap the score card and list them
- - Match Score Card
+ # Match Score Card
   - Reusable component
- - Created sample test unit for formatted date
+ # Created sample test unit for formatted date
 
 ### Install Dependencies and Start App
 Install dependencies:
